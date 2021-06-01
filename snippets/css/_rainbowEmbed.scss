@@ -1,0 +1,24 @@
+@keyframes gradient { 
+  0%{background-position:0% 0%}
+  50%{background-position:75% 75%}
+  100%{background-position:150% 150%}
+}
+
+.embed-IeVjo6:not([style]) {
+  border-left: none;
+}
+.embed-IeVjo6:not([style])::before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  background: linear-gradient(to bottom, #F00, #F00, #ffa500, #FF0, #008000, #00F, #4b0082, #4b0082, #00F, #008000, #FF0, #FFA500, #F00, #F00);
+  background-repeat: repeat;
+  background-size: 300% 300%;
+  animation: gradient 5s linear infinite;
+}
+.embed-IeVjo6:not([style]) .grid-1nZz7S {
+  margin-left: 3.25px;
+}
