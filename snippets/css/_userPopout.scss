@@ -1,7 +1,6 @@
+/* Custom popout by Sammy & It'sJustJosh */
 .userPopout-3XzG_A {width: 400px !important;}
-.headerTop-2y3V6H {padding-top: 48px; padding-bottom: 24px;}
-.headerText-2WJ44e.userSelectText-1o1dQ7 {margin-left: 160px !important;}
-.customStatus-3NamXG {margin-top: 30px !important;}
+.headerText-15Q25Z.userSelectText-1o1dQ7 {margin-left: 160px !important;}
 .avatar-22FtUu.wrapper-3t9DeA {
   width: 128px !important;
   height: 128px !important;
@@ -12,17 +11,50 @@
 .size12-3R0845 {font-size: 0px;}
 .avatarHint-1E3LMl,.textarea-2r0oV8,.protip-YaFfgO,.footer-1fjuF6 {display: none}
 
-.setIdentityLink-OpBDR6 {
-  display: none;
+.profileBannerPremium-35utuo {
+  width: auto;
 }
 
-#app-mount .customStatusText-2wWmYP {
-  display: block;
-  text-align: center; 
+.headerTop-2cWpdB {
+  padding-top: 48px;
+  padding-bottom: 24px;
+
+  .customStatus-3NamXG {
+    margin-top: 20px;
+    .customStatusEmoji-1itGdP {
+      width: 128px !important;
+      height: 128px !important;
+      margin-left: 119px;
+      margin-bottom: 5px;
+    }
+    .customStatusText-2wWmYP {
+      display: block;
+      text-align: center; 
+    }
+  }
+
+  .setIdentityLink-OpBDR6 {
+    display: none;
+  }
+  .aboutMeSection---MkQa {
+    padding-top: 20px;
+  }
+  .aboutMeTitle-2i3lnH {
+    justify-content: center;
+  }
+  .aboutMeBody-3JwDln {
+    text-align: center;
+  }
 }
-#app-mount .customStatusEmoji-1itGdP {
-  width: 128px;
-  height: 128px;
-  margin-left: 119px;
-  margin-bottom: 5px;
+
+/*If the person dosn't have a premium profile */
+.userPopout-3XzG_A .banner-2QYc2d:not([class*="Premium"]) {
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  animation: rainbow-banner 18s ease infinite;
+}
+@keyframes rainbow-banner {
+  0% {background-position: 0 82%}
+  50% {background-position: 100% 19%}
+  100% {background-position: 0 82%}
 }
