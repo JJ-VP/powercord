@@ -1,0 +1,10 @@
+[class*="membersWrap-"] {
+  min-width: 0 !important; 
+}
+[class*="members-"] {
+  transition: 250ms ease all;
+  width: 61px;
+}
+[class*="membersWrap-"]:hover [class*="members-"]{
+  width: 240px !important;
+}
